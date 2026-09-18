@@ -31,7 +31,15 @@
           {
             "id": null,
             "kind": "RoleBinding",
-            "match_strategy_matrix": null,
+            "match_strategy_matrix": [
+              [
+                "equal"
+              ],
+              [
+                "equal",
+                "not_null"
+              ]
+            ],
             "model": {
               "displayName": "",
               "id": "00000000-0000-0000-0000-000000000000",
@@ -51,6 +59,11 @@
                   "spec",
                   "roleRef",
                   "name"
+                ],
+                [
+                  "configuration",
+                  "metadata",
+                  "namespace"
                 ]
               ],
               "patchStrategy": "replace"
@@ -80,6 +93,11 @@
                   "configuration",
                   "metadata",
                   "name"
+                ],
+                [
+                  "configuration",
+                  "metadata",
+                  "namespace"
                 ]
               ],
               "patchStrategy": "replace"
