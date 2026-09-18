@@ -36,7 +36,8 @@
                 "equal"
               ],
               [
-                "equal"
+                "equal",
+                "not_null"
               ]
             ],
             "model": {
